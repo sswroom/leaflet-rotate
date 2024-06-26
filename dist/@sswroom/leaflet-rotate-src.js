@@ -611,47 +611,47 @@
             
         },
 
-        // getEvents() {
-        //     const events = {
-        //         viewreset: this._reset,
-        //         zoom: this._onZoom,
-        //         moveend: this._update,
-        //         zoomend: this._onZoomEnd
-        //     };
-        //     if (this._zoomAnimated) {
-        //         events.zoomanim = this._onAnimZoom;
-        //     }
-        //     return events;
-        // },
+        getEvents() {
+            const events = {
+                viewreset: this._reset,
+                zoom: this._onZoom,
+                moveend: this._update,
+                zoomend: this._onZoomEnd
+            };
+            if (this._zoomAnimated) {
+                events.zoomanim = this._onAnimZoom;
+            }
+            return events;
+        },
 
-        // _onAnimZoom(ev) {
-        //     this._updateTransform(ev.center, ev.zoom);
-        // },
+        _onAnimZoom(ev) {
+            this._updateTransform(ev.center, ev.zoom);
+        },
 
-    	// _onZoom() {
-        //     this._updateTransform(this._map.getCenter(), this._map.getZoom());
-    	// },
+    	_onZoom() {
+            this._updateTransform(this._map.getCenter(), this._map.getZoom());
+    	},
 
-        // _onZoomEnd() {
-        //     for (const id in this._layers) {
-        //         this._layers[id]._project();
-        //     }
-        // },
+        _onZoomEnd() {
+            for (const id in this._layers) {
+                this._layers[id]._project();
+            }
+        },
 
-        // _reset() {
-        //     this._update();
-        //     this._updateTransform(this._center, this._zoom);
+        _reset() {
+            this._update();
+            this._updateTransform(this._center, this._zoom);
 
-        //     for (const id in this._layers) {
-        //         this._layers[id]._reset();
-        //     }
-        // },
+            for (const id in this._layers) {
+                this._layers[id]._reset();
+            }
+        },
 
-        // _updatePaths() {
-        //     for (const id in this._layers) {
-        //         this._layers[id]._update();
-        //     }
-        // },
+        _updatePaths() {
+            for (const id in this._layers) {
+                this._layers[id]._update();
+            }
+        },
 
         _update: function() {
             if (!this._map._rotate) {

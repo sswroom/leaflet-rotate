@@ -1,6 +1,6 @@
 {
-	"name": "leaflet-rotate",
-	"version": "0.2.8",
+	"name": "@sswroom/leaflet-rotate",
+	"version": "0.2.9",
 	"description": "A Leaflet plugin that allows to add rotation functionality to map tiles",
 	"type": "module",
 	"main": "dist/leaflet-rotate.js",
@@ -16,7 +16,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Raruto/leaflet-rotate.git"
+		"url": "https://github.com/sswroom/leaflet-rotate.git"
 	},
 	"keywords": [
 		"leaflet",
@@ -41,13 +41,17 @@
 		{
 			"name": "Zsolt “Hyperknot” Ero",
 			"url": "https://github.com/hyperknot"
+		},
+		{
+			"name": "sswroom",
+			"url": "https://github.com/sswroom/leaflet-rotate"
 		}
 	],
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/Raruto/leaflet-rotate/issues"
+		"url": "https://github.com/sswroom/leaflet-rotate/issues"
 	},
-	"homepage": "https://github.com/Raruto/leaflet-rotate#readme",
+	"homepage": "https://github.com/sswroom/leaflet-rotate#readme",
 	"devDependencies": {
 		"rollup": "^3.20.6",
 		"@rollup/plugin-commonjs": "^24.1.0",

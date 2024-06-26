@@ -24,7 +24,7 @@ _For a working example see the following [demo](https://raruto.github.io/leaflet
 Within your local development environment:
 
 ```shell
-git clone git@github.com:Raruto/leaflet-rotate.git
+git clone git@github.com:sswroom/leaflet-rotate.git
 cd ./leaflet-rotate
 
 npm i         # install dependencies
